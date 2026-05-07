@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RepLog — Workout Planner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="app">
+  <header class="app-header">
+    <div class="logo"><div class="logo-dot"></div> RepLog</div>
+    <div class="header-date" id="headerDate"></div>
+  </header>
+
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="App.showView('today', this)">Today</button>
+    <button class="tab-btn" onclick="App.showView('plans', this)">My Plans</button>
+    <button class="tab-btn" onclick="App.showView('history', this)">History</button>
+  </div>
+
+  <!-- TODAY -->
+  <div class="view active" id="view-today">
+    <div class="today-greeting">
+      <h2 id="greetingText">Good morning</h2>
+      <p id="greetingDate"></p>
+    </div>
+    <div id="todayContent"></div>
+  </div>
+
+  <!-- PLANS -->
+  <div class="view" id="view-plans">
+    <div class="section-head">
+      <div>
+        <div class="section-title">My Plans</div>
+        <div class="section-sub">Create and manage your workout routines</div>
+      </div>
+      <button class="btn btn-primary" onclick="App.openBuilder()">+ New Plan</button>
+    </div>
+    <div class="plans-grid" id="plansList"></div>
+  </div>
+
+  <!-- HISTORY -->
+  <div class="view" id="view-history">
+    <div class="section-head">
+      <div>
+        <div class="section-title">Workout History</div>
+        <div class="section-sub">Your logged sessions</div>
+      </div>
+    </div>
+    <div class="history-grid" id="historyGrid"></div>
+  </div>
+</div>
+
+<!-- PLAN BUILDER OVERLAY -->
+<div id="builderOverlay">
+  <div class="builder-header">
+    <div class="builder-title" id="builderTitleLabel">New Workout Plan</div>
+    <div style="display:flex;gap:10px;">
+      <button class="btn btn-ghost btn-sm" onclick="App.closeBuilder()">Cancel</button>
+      <button class="btn btn-primary btn-sm" onclick="App.savePlan()">Save Plan</button>
+    </div>
+  </div>
+  <div class="builder-body">
+    <div class="builder-library">
+      <div class="builder-lib-head">
+        <input class="search-input" id="libSearch" placeholder="Search exercises…" oninput="App.filterLibrary()">
+        <div class="cat-filter" id="catFilter"></div>
+      </div>
+      <div class="lib-list" id="libList"></div>
+    </div>
+    <div class="builder-config">
+      <div class="builder-config-head">
+        <div class="field-label">Plan Name</div>
+        <input class="text-input" id="planNameInput" placeholder="e.g. Push Day, Full Body…" maxlength="40">
+        <div class="field-label" style="margin-top:14px;">Schedule Days</div>
+        <div class="day-selector" id="daySelector"></div>
+      </div>
+      <div class="selected-exercises" id="selectedExList"></div>
+      <div class="builder-footer">
+        <div class="save-hint" id="selCount">0 exercises selected</div>
+        <button class="btn btn-primary" onclick="App.savePlan()">Save Plan →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div id="toast"></div>
+
+<!-- CONFIRM MODAL -->
+<div id="confirmModal">
+  <div class="confirm-box">
+    <h3 id="confirmTitle">Delete Plan?</h3>
+    <p id="confirmMsg">This cannot be undone.</p>
+    <div class="confirm-actions">
+      <button class="btn btn-ghost btn-sm" onclick="App.closeConfirm()">Cancel</button>
+      <button class="btn btn-danger btn-sm" id="confirmOkBtn">Delete</button>
+    </div>
+  </div>
+</div>
+
+<!-- Entry point – ES module, loads all other js files via imports -->
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
