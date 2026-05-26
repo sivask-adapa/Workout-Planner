@@ -248,10 +248,96 @@ export const EXERCISES = [
     steps:["Fill a tub with cold water. Optimal temp is 50–59°F (10–15°C). Add ice if needed.","Ease into the water slowly to avoid cold shock response.","Focus on slow, controlled breathing to calm the nervous system.","Immerse up to your neck if possible for whole-body benefits.","Stay in for 2–10 minutes depending on temperature and tolerance.","Exit and warm up naturally — avoid immediately jumping in a hot shower."],
     tips:"Cold exposure reduces inflammation and DOMS, boosts alertness, and builds mental resilience. Start with just 1–2 minutes." },
 
-  { id:"med", cat:"mind", catLabel:"Mind-Body", emoji:"🌿", name:"Meditation", muscles:"Nervous System", defSets:1, defReps:10,
-    imgQueries:["meditation mindfulness exercise sitting","meditation yoga pose calm","mindfulness meditation practice fitness"],
-    steps:["Lie flat on your back in a quiet space. Close your eyes.","Take 5 deep breaths to settle in.","Start at your toes — notice any sensations (warmth, tension, tingling) without judging them.","Slowly move your awareness up: feet, ankles, calves, knees, thighs, hips, etc.","For any area of tension, breathe into it and consciously let it soften.","Work your way up to the crown of your head. Total time: 10–20 minutes."],
-    tips:"Regular meditation reduces cortisol, improves sleep quality, and enhances body awareness for better movement quality in training." },
+  // ── DUMBBELLS ──────────────────────────────────────────────────────────────
+  { id:"dg",   cat:"dumbbells", catLabel:"Dumbbells", emoji:"🏋️", name:"Dumbbell Goblet Squat", muscles:"Quads, Glutes, Core", defSets:3, defReps:12,
+    imgQueries:["dumbbell goblet squat exercise","goblet squat fitness","goblet squat legs"],
+    steps:["Hold a single dumbbell vertically at chest height with both hands cupped around the top end.","Stand with feet shoulder-width apart, toes pointed out 30–45°.","Keeping your chest tall and elbows inside your knees, sit down into a deep squat.","Descend until your hips are below parallel — use the dumbbell as a counterbalance.","Drive through your heels and squeeze your glutes to stand.","Keep your torso upright throughout — avoid folding forward."],
+    tips:"The goblet squat is the best squat teaching tool. The weight naturally keeps you upright and forces good depth." },
+
+  { id:"dsd",  cat:"dumbbells", catLabel:"Dumbbells", emoji:"🏋️", name:"Dumbbell Sumo Deadlift", muscles:"Inner Thighs, Glutes, Hamstrings", defSets:3, defReps:10,
+    imgQueries:["dumbbell sumo deadlift exercise","sumo deadlift dumbbell legs","sumo squat deadlift fitness"],
+    steps:["Stand with feet wider than shoulder-width, toes pointed out 45°.","Hold a dumbbell vertically with both hands between your legs.","Hinge at the hips and bend knees to lower — back flat, chest up.","Brace your core and drive through your heels to stand, squeezing glutes at the top.","Push your knees outward as you descend and ascend — don't let them cave in.","Lower the dumbbell back to the floor with control."],
+    tips:"The wide stance targets your inner thighs (adductors) far more than a conventional stance. Great for glute development." },
+
+  { id:"dcf",  cat:"dumbbells", catLabel:"Dumbbells", emoji:"🏋️", name:"Dumbbell Chest Fly", muscles:"Chest, Anterior Deltoids", defSets:3, defReps:12,
+    imgQueries:["dumbbell chest fly exercise","dumbbell fly chest workout","chest fly dumbbell bench"],
+    steps:["Lie on a flat bench holding a dumbbell in each hand, arms extended above your chest, palms facing each other.","Maintain a slight bend in your elbows (about 10–15°) — never fully lock or fully bend.","Slowly lower the dumbbells in a wide arc until you feel a deep stretch across your chest.","Stop when your elbows are roughly level with your shoulders.","Reverse the arc, squeezing your chest as you bring the dumbbells back together at the top.","Think 'hugging a large tree' — the movement is from the shoulder joint, not the elbow."],
+    tips:"Keep the elbow bend constant — don't turn this into a press. Control the descent slowly for maximum chest stretch." },
+
+  { id:"dip",  cat:"dumbbells", catLabel:"Dumbbells", emoji:"🏋️", name:"Dumbbell Incline Press", muscles:"Upper Chest, Deltoids, Triceps", defSets:3, defReps:10,
+    imgQueries:["dumbbell incline press exercise","incline dumbbell press upper chest","dumbbell incline bench press"],
+    steps:["Set a bench to a 30–45° incline. Sit back with a dumbbell in each hand resting on your thighs.","Kick the dumbbells up as you lie back, positioning them at shoulder height, palms forward.","Brace your core and retract your shoulder blades against the bench.","Press the dumbbells up and slightly inward until arms are fully extended.","Lower with control — elbows at 45–75° to your torso (not flared).","Feel a stretch across the upper chest at the bottom of each rep."],
+    tips:"A 30° incline hits the upper chest without over-stressing the shoulders. Going steeper than 45° shifts focus to the front delts." },
+
+  { id:"ddbr", cat:"dumbbells", catLabel:"Dumbbells", emoji:"🏋️", name:"Dumbbell Bent-Over Row", muscles:"Lats, Rhomboids, Rear Delts, Biceps", defSets:3, defReps:12,
+    imgQueries:["dumbbell bent over row exercise","dumbbell row back exercise","bent over dumbbell row fitness"],
+    steps:["Hold a dumbbell in each hand, hinge at the hips until your torso is ~45° to the floor.","Let the dumbbells hang straight down from your shoulders, palms facing each other.","Keeping your back flat and core braced, row both dumbbells toward your hips simultaneously.","Drive your elbows behind you — squeeze your shoulder blades together hard at the top.","Lower with full control — let your arms fully extend at the bottom.","Avoid using momentum; each rep should be strict."],
+    tips:"A neutral (palms-in) grip reduces shoulder impingement and allows a fuller range of motion versus an overhand grip." },
+
+  { id:"dlr",  cat:"dumbbells", catLabel:"Dumbbells", emoji:"🏋️", name:"Dumbbell Lateral Raise", muscles:"Lateral (Side) Deltoids", defSets:3, defReps:15,
+    imgQueries:["dumbbell lateral raise exercise","side lateral raise shoulders","dumbbell shoulder lateral raise"],
+    steps:["Stand holding a dumbbell in each hand at your sides, palms facing your thighs.","Maintain a slight bend in your elbows throughout the movement.","Raise both arms out to the sides until they reach shoulder height — no higher.","Lead with your elbows, not your wrists. Pinkies should be slightly higher than thumbs at the top.","Pause briefly at the top, then lower slowly over 3 seconds.","Avoid shrugging your traps — keep shoulders packed down."],
+    tips:"Use lighter weight than you think. The lateral deltoid is small and most people cheat with heavy weights. Slow negatives are the key." },
+
+  { id:"dfr",  cat:"dumbbells", catLabel:"Dumbbells", emoji:"🏋️", name:"Dumbbell Front Raise", muscles:"Anterior (Front) Deltoids, Upper Chest", defSets:3, defReps:12,
+    imgQueries:["dumbbell front raise exercise","front raise shoulders dumbbell","dumbbell anterior deltoid raise"],
+    steps:["Stand with a dumbbell in each hand hanging in front of your thighs, palms facing back.","Keeping a slight elbow bend, raise one or both arms directly in front of you to shoulder height.","Pause at the top — don't swing the weight with your body.","Lower slowly and under control back to the start.","Alternate arms for variety, or raise both simultaneously for added core challenge."],
+    tips:"Avoid going above shoulder height — it adds impingement risk with no extra benefit. Front raises complement lateral raises for full deltoid development." },
+
+  { id:"dhc",  cat:"dumbbells", catLabel:"Dumbbells", emoji:"🏋️", name:"Dumbbell Hammer Curl", muscles:"Brachialis, Biceps, Forearms", defSets:3, defReps:12,
+    imgQueries:["dumbbell hammer curl exercise","hammer curl biceps forearm","neutral grip dumbbell curl"],
+    steps:["Stand with a dumbbell in each hand, arms extended, palms facing each other (neutral grip).","Pin your upper arms to your sides — they should not move during the curl.","Curl both dumbbells simultaneously toward your shoulders, maintaining the neutral grip throughout.","Squeeze at the top of the movement.","Lower slowly — take 2–3 seconds on the way down.","Alternatively, alternate arms for a slightly different stimulus."],
+    tips:"The neutral grip targets the brachialis (the muscle under your bicep) and brachioradialis (forearm) more than standard curls — great for overall arm thickness." },
+
+  { id:"dconc", cat:"dumbbells", catLabel:"Dumbbells", emoji:"🏋️", name:"Concentration Curl", muscles:"Biceps Brachii (peak)", defSets:3, defReps:12,
+    imgQueries:["dumbbell concentration curl exercise","concentration curl bicep seated","dumbbell bicep peak curl"],
+    steps:["Sit on the edge of a bench with legs spread. Hold a dumbbell in one hand.","Rest the back of your upper arm against the inside of your same-side thigh.","Let the dumbbell hang fully extended — a full stretch at the bottom is key.","Curl the weight up toward your shoulder by contracting your bicep only.","Squeeze hard at the top and hold for 1–2 seconds.","Lower slowly and fully before the next rep. Complete all reps, then switch arms."],
+    tips:"Bracing your arm against your leg eliminates all cheating and fully isolates the bicep. This is the best exercise for building bicep peak." },
+
+  { id:"dtk",  cat:"dumbbells", catLabel:"Dumbbells", emoji:"🏋️", name:"Dumbbell Tricep Kickback", muscles:"Triceps Brachii", defSets:3, defReps:12,
+    imgQueries:["dumbbell tricep kickback exercise","tricep kickback fitness","dumbbell kickback triceps"],
+    steps:["Hinge at the hips until your torso is nearly parallel to the floor.","Hold a dumbbell in one hand, upper arm pinned against your side and parallel to the floor.","Keeping your upper arm completely still, extend your forearm back until your arm is straight.","Squeeze your tricep hard at full extension — hold for 1 second.","Slowly return to the start (90° elbow bend).","Complete all reps on one side before switching."],
+    tips:"The upper arm must stay parallel to the ground and locked. Any movement kills the isolation. Use lighter weight and focus on the squeeze at full extension." },
+
+  { id:"darnold", cat:"dumbbells", catLabel:"Dumbbells", emoji:"🏋️", name:"Dumbbell Arnold Press", muscles:"All 3 Deltoid Heads, Triceps", defSets:3, defReps:10,
+    imgQueries:["dumbbell arnold press exercise","arnold press shoulders dumbbell","arnold dumbbell shoulder press"],
+    steps:["Sit on a bench (back supported) or stand. Hold dumbbells in front of your shoulders, palms facing you (as if at the top of a curl).","As you press upward, rotate your palms outward so they face forward at the top.","Fully extend your arms at the top with palms facing away from you.","As you lower, reverse the rotation — palms return to face you at the bottom.","The rotation should be smooth and controlled throughout the full range."],
+    tips:"Invented by Arnold Schwarzenegger, this press hits all three deltoid heads in one movement thanks to the rotation. Use slightly lighter weight than a standard press." },
+
+  { id:"dpo",  cat:"dumbbells", catLabel:"Dumbbells", emoji:"🏋️", name:"Dumbbell Pullover", muscles:"Lats, Serratus Anterior, Lower Chest", defSets:3, defReps:12,
+    imgQueries:["dumbbell pullover exercise chest","dumbbell pullover lats chest","straight arm dumbbell pullover"],
+    steps:["Lie perpendicular across a bench so only your upper back is supported. Plant your feet flat on the floor.","Hold a single dumbbell with both hands directly above your chest, arms nearly straight (slight elbow bend).","Keeping arms straight, lower the dumbbell in an arc over and behind your head until you feel a deep lat and chest stretch.","Pause at the bottom — don't bounce — then pull the dumbbell back in the same arc to the starting position.","Breathe in as you lower, breathe out as you pull back."],
+    tips:"One of the few exercises that works both the chest and lats simultaneously. Control the arc — never use momentum on the way down." },
+
+  { id:"dstu", cat:"dumbbells", catLabel:"Dumbbells", emoji:"🏋️", name:"Dumbbell Step-Up", muscles:"Quads, Glutes, Hamstrings, Balance", defSets:3, defReps:10,
+    imgQueries:["dumbbell step up exercise","step up dumbbell legs","box step up dumbbell fitness"],
+    steps:["Stand in front of a sturdy box or bench (12–18 inches high), holding a dumbbell in each hand.","Place your right foot fully on top of the box — the entire foot, not just your toes.","Drive through your right heel to step up, bringing your left foot up beside it.","Stand tall at the top, then step back down with your left foot first, then right.","Complete all reps leading with the right leg, then switch legs.","Keep your torso upright — avoid leaning forward excessively."],
+    tips:"Drive through the heel of the elevated foot, not the ball. Step-ups are highly effective for correcting left/right leg strength imbalances." },
+
+  { id:"dht",  cat:"dumbbells", catLabel:"Dumbbells", emoji:"🏋️", name:"Dumbbell Hip Thrust", muscles:"Glutes, Hamstrings, Hip Extensors", defSets:3, defReps:15,
+    imgQueries:["dumbbell hip thrust exercise","hip thrust dumbbell glutes","dumbbell glute bridge hip thrust"],
+    steps:["Sit on the floor with your upper back against a bench. Place a dumbbell horizontally across your hip crease and hold it in place.","Plant your feet flat on the floor, hip-width apart, knees bent at ~90°.","Brace your core and drive your hips upward by squeezing your glutes.","At the top, your body forms a straight line from shoulders to knees.","Hold and squeeze your glutes hard for 1–2 seconds at the top.","Lower your hips slowly until they nearly touch the floor, then repeat."],
+    tips:"Squeeze your glutes, not your lower back, at the top. If you feel it in your lower back, your feet are too far forward or your core isn't braced." },
+
+  { id:"dfw",  cat:"dumbbells", catLabel:"Dumbbells", emoji:"🏋️", name:"Dumbbell Farmer's Walk", muscles:"Forearms, Traps, Core, Legs", defSets:3, defReps:40,
+    imgQueries:["dumbbell farmer walk exercise","farmer's carry dumbbell fitness","farmer walk carry grip strength"],
+    steps:["Pick up a heavy dumbbell in each hand using a firm grip. Stand tall.","Retract your shoulder blades slightly and engage your core tightly.","Walk forward with short, controlled steps at a normal pace.","Keep your gaze forward, chest up, and shoulders level — do not lean to one side.","Continue for the prescribed distance (20–40 metres) or time.","Set the dumbbells down by hinging at the hips with a neutral spine."],
+    tips:"The farmer's walk is one of the most effective full-body exercises for grip, traps, core stability, and conditioning. Go heavier than feels comfortable." },
+
+  { id:"dslu", cat:"dumbbells", catLabel:"Dumbbells", emoji:"🏋️", name:"Dumbbell Side Lunge", muscles:"Adductors, Glutes, Quads", defSets:3, defReps:10,
+    imgQueries:["dumbbell side lunge exercise","lateral lunge dumbbell legs","dumbbell lateral lunge fitness"],
+    steps:["Stand with feet together holding a dumbbell in each hand at your sides.","Take a large step to the right, landing with your right foot flat and toes slightly out.","Bend your right knee deeply, sitting your hips back as if into a single-leg squat. Left leg stays straight.","Keep the dumbbells on either side of your right foot for balance.","Drive off your right heel to return to standing.","Complete all reps on one side, then switch. Or alternate sides each rep."],
+    tips:"The side lunge trains the adductors (inner thighs) and glutes in a lateral plane of motion that most exercises neglect. Great for hip mobility." },
+
+  { id:"drr",  cat:"dumbbells", catLabel:"Dumbbells", emoji:"🏋️", name:"Dumbbell Renegade Row", muscles:"Lats, Core, Obliques, Triceps", defSets:3, defReps:8,
+    imgQueries:["dumbbell renegade row exercise","renegade row plank dumbbell","plank row dumbbell core"],
+    steps:["Start in a push-up position with each hand gripping a dumbbell on the floor, shoulder-width apart.","Your body should form a straight plank — squeeze your glutes and brace your core hard.","Without rotating your hips, row the right dumbbell up to your hip, elbow driving behind you.","Lower the right dumbbell back to the floor, then row the left.","One row on each side = 1 rep. Move deliberately — avoid twisting the hips.","The wider your feet, the more stable you'll be. Narrow feet = harder."],
+    tips:"The renegade row is as much a core exercise as a back exercise. If your hips rotate, widen your stance or reduce weight." },
+
+  { id:"dskull", cat:"dumbbells", catLabel:"Dumbbells", emoji:"🏋️", name:"Dumbbell Skull Crusher", muscles:"Triceps Brachii (all heads)", defSets:3, defReps:12,
+    imgQueries:["dumbbell skull crusher exercise","lying tricep extension dumbbell","skull crusher triceps dumbbell"],
+    steps:["Lie flat on a bench holding a dumbbell in each hand, arms fully extended above your chest, palms facing each other.","Keep your upper arms completely vertical and stationary throughout — only your forearms move.","Bend your elbows to lower the dumbbells toward the sides of your head (beside your temples).","Stop when your forearms are parallel to the floor or slightly past.","Extend your elbows back to the start by contracting your triceps forcefully.","Move slowly and with control — the name is a reminder to stay focused."],
+    tips:"Keep your elbows pointing straight up — flaring them out turns this into a press. The most effective isolation exercise for all three tricep heads." },
 ];
 
 /** Lookup by id */
@@ -263,6 +349,7 @@ export function exById(id) {
 export const CAT_COLORS = {
   strength: '#7c6cff', cardio: '#ff6b6b', bw: '#ffd166',
   core: '#3dd68c', hiit: '#ff9b6b', flex: '#6bdfff', sport: '#ff6bd6', mind: '#b06bff',
+  dumbbells: '#ffb347',
 };
 
 export const TIME_BASED_IDS = new Set(['run','cyc','row','swm','stm','jr','plk','dbr','cwi','med']);

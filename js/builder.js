@@ -17,6 +17,7 @@ import { renderPlans } from './plans.js';
 const CAT_LABELS = {
   all: 'All', strength: 'Strength', cardio: 'Cardio', bw: 'Bodyweight',
   core: 'Core', hiit: 'HIIT', flex: 'Flexibility', sport: 'Sport', mind: 'Mind-Body',
+  dumbbells: 'Dumbbells',
 };
 
 let activeCat = 'all';
